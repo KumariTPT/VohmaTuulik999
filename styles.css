@@ -1,0 +1,1083 @@
+/* DEFAULT SÄTTED */
+body {
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+	background-color: #F9F9F9;
+	color: #2E353D;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Playfair Display', serif;
+	color: #2F3E4D;
+}
+
+h1 {
+	font-size: 61px;
+}
+
+h2 {
+  	font-size: 48.8px;
+}
+
+h3 {
+  	font-size: 39.1px;
+  	font-weight: medium;
+}
+
+h4{
+  	font-size: 31.3px;
+}
+
+h5 {
+  	font-size: 25px;
+}
+
+h6 {
+  	font-size: 20px;
+}
+
+p {
+	font-size: 16px;
+  	color: #2E353D;
+  	line-height: 1.6;
+}
+
+button {
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	width: 267px;
+	height: 40px;
+	background-color: #5B7083;
+	color: white;
+	border: none;
+	border-radius: 12px;
+	cursor: pointer;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 48px;
+}
+
+button:hover {
+	background-color: #4a5f70;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* 3 LEHE HERO BANNERID */
+.hero-banner {
+  	position: relative;
+  	height: 674px;
+  	width: 100%;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	text-align: center;
+  	color: white;
+  	overflow: hidden;
+}
+
+/* MUST OVERLAY BANNERITELE */
+.hero-banner::before {
+  	content: '';
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+  	background-color: rgba(0, 0, 0, 0.4);
+  	z-index: 1;
+}
+
+/* HERO SISU AKA TEKST */
+.hero-content {
+	position: relative;
+	z-index: 2;
+	max-width: 800px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	color: white;
+}
+
+.hero-content h2 {
+  	margin-bottom: 16px;
+  	color: white;
+}
+
+.hero-content p {
+  	color: white;
+}
+
+/* PILDID IGALE HEROLE */
+.epood-hero {
+  	background: url('assets/rand.png') center/cover no-repeat;
+}
+
+.kontakt-hero {
+  	background: url('assets/postkast.png') center/cover no-repeat;
+}
+
+.annetused-hero {
+  	background: url('assets/porsas.png') center/cover no-repeat;
+}
+
+
+/* NAVBAR */
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 100px;
+	background-color: white;
+	border-bottom: 1px solid #ddd;
+	position: sticky;
+	top: 0;
+	height: 48px;
+	z-index: 1000;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-vasak {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.navbar-vasak img {
+	width: 120px;
+	height: 60px;
+}
+
+.navbar-kesk a {
+	margin: 0 16px;
+	text-decoration: none;
+	color: #2F3E4D;
+	font-weight: 500;
+}
+
+.navbar-kesk a:hover {
+	color: #4a5f70;
+}
+
+.navbar-kesk a.active {
+	text-decoration: underline;
+}
+
+.navbar-parem {
+	display: flex;
+	align-items: center;
+	gap: 64px;
+}
+
+.keeled {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.keeled img {
+	width: 24px;
+	height: auto;
+	border-radius: 4px;
+	object-fit: cover;
+}
+
+/* FOOTER */
+footer {
+	background-color: #EEEEEE;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 60px 40px;
+}
+
+footer h4 {
+	margin-bottom: 16px;
+	color: #2F3E4D;
+	font-size: 25px;
+}
+
+footer a {
+	display: block;
+	color: #2E353D;
+	text-decoration: none;
+	margin-bottom: 6px;
+	margin-top: 10px;
+}
+
+.footer-alumine {
+	width: 100%;
+	text-align: center;
+	padding-top: 20px;
+	border-top: 1px solid #ccc;
+	margin-top: 40px;
+	margin-bottom: -36px;
+	color: #2E353D;
+}
+
+.footer-links a:hover {
+	color: #4a5f70;
+}
+
+.footer img {
+	width: 160px;
+	height: auto;
+	object-fit: contain;
+	margin-bottom: -14px;
+}
+
+.footer-sots {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.social-nupud {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.social-nupud button {
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    margin-top: 0;
+    width: auto;
+    height: auto;
+}
+
+.social-nupud img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+
+
+
+
+
+
+
+
+/* PEALEHT HAKKAB SIIT */
+.hero {
+	position: relative;
+	height: 800px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 0 100px;
+	overflow: hidden;
+}
+
+.hero::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url('assets/hero.jpg') center/cover no-repeat;
+	z-index: 0;
+}
+
+.hero::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+	z-index: 1;
+}
+
+.hero h1, .hero p, .hero-nupud {
+	position: relative;
+	z-index: 2;
+}
+
+.hero h1 {
+	font-size: 48px;
+	margin-bottom: 16px;
+	color: white;
+}
+
+.hero p {
+	margin-bottom: 32px;
+  	color: white;
+}
+
+.hero-nupud {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+}
+
+
+/* AJALUGU SEKTSIOON */
+.ajalugu {
+    display: flex;
+    justify-content: center;
+    gap: 160px;
+    align-items: center;
+    padding: 100px;
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.ajalugu-text {
+	max-width: 40%;
+}
+
+.ajalugu-pilt {
+    width: 412px;
+    height: 594px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    max-width: 30%;
+}
+
+
+/* MEISTRID SEKTSIOON */
+
+#meistridparandus {
+    text-align: center;
+}
+
+.nimedparandus {
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.meistrid {
+	background-color: #EEEEEE;
+	padding: 100px 100px;
+	text-align: center;
+}
+
+.kaardid {
+	display: flex;
+	justify-content: center;
+	gap: 90px;
+	margin-top: 120px;
+}
+
+.kaart {
+	background-color: white;
+	border-radius: 12px;
+	box-shadow: 4px 4px 25px rgba(0,0,0,0.25);
+	padding: 24px;
+	max-width: 405px;
+	border: 1px solid #DDD;
+}
+
+.kaart img {
+	width: 365px;
+	height: 364px;
+	border-radius: 12px;
+	object-fit: cover;
+	margin-bottom: 16px;
+}
+
+.kaart p, .kaart h3, .kaart li {
+	text-align: left;
+}
+
+/* CTA SEKTSIOON */
+
+.cta-sektsioon {
+  	display: flex;
+  	justify-content: center;
+  	gap: 160px;
+  	align-items: center;
+  	padding: 100px;
+  	width: 100%;
+  	box-sizing: border-box;
+}
+
+.cta-text {
+  	max-width: 70%;
+}
+
+.cta-pilt {
+  	width: 493px;
+  	height: 292px;
+  	border-radius: 12px;
+  	object-fit: cover;
+  	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  	margin-left: 40px;
+  	max-width: 30%;
+}
+
+
+
+
+
+
+
+
+/* AJAKAVA SEKTSIOON*/
+.ajakava {
+	padding: 100px;
+	background-color: #EEEEEE;
+}
+
+.ajakava h3 {
+	text-align: center;
+}
+
+.ajakava table {
+	width: 1137px;
+	margin: 0 auto;
+	background: white;
+	border-collapse: collapse;
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.13);
+}
+
+.ajakava th, .ajakava td {
+	padding: 16px;
+	border: 1px solid #ddd;
+	text-align: left;
+}
+
+
+/* MEENED SEKTSIOON */
+.meened {
+  	overflow: hidden;
+  	padding: 80px 0;
+  	background-color: #F9F9F9;
+}
+
+.meened-slider {
+  	width: 100%;
+  	overflow: hidden;
+  	position: relative;
+}
+
+.meened-container {
+  	max-width: 1320px;
+  	margin: 0 auto;
+  	padding: 0 20px;
+}
+
+.meened-track {
+  	display: flex;
+  	transition: transform 0.5s ease-in-out;
+  	gap: 24px;
+}
+
+.meened-track img {
+  	width: 420px;
+  	height: 372px;
+  	object-fit: cover;
+  	border-radius: 12px;
+  	box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.15);
+  	flex-shrink: 0;
+}
+
+
+
+
+
+
+
+
+
+/* EPOOD TOOTED SECTION */
+
+#peatext {
+  	text-align: center;
+  	margin-bottom: 88px;
+}
+
+#epood-tooted {
+	padding: 80px 100px;
+}
+
+.epood-tooted-container {
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+	flex-wrap: wrap;
+}
+
+.toode {
+	background-color: white;
+	border-radius: 12px;
+	box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.15);
+	border: 1px solid #DDD;
+	padding: 24px;
+	max-width: 340px;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.toode img {
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+	border-radius: 12px;
+	margin-bottom: 16px;
+}
+
+.toode h3 {
+	font-size: 20px;
+	margin-bottom: 8px;
+}
+
+.toode p {
+	font-size: 14px;
+	margin-bottom: 8px;
+}
+
+.toode .hind {
+	font-weight: bold;
+	font-size: 16px;
+	margin-top: auto;
+	margin-bottom: 16px;
+}
+
+.toode button {
+	width: 100%;
+}
+
+.toode-nupp {
+	display: inline-block;
+	background-color: #5B7083;
+	color: white;
+	text-decoration: none;
+	padding: 12px 84px;
+	border-radius: 12px;
+	text-align: center;
+}
+
+.toode-nupp:hover {
+	background-color: #4a5f70;
+}
+
+
+
+/* EPOOD TAGASISIDE  */
+#epood-tagasiside {
+	background-color: #F1F1F5;
+	padding: 80px 100px;
+	text-align: center;
+  	margin: 150px 0 140px 0;
+}
+
+#epood-tagasiside h3 {
+  	text-align: center;
+	margin-bottom: 64px;
+}
+
+.tagasiside-kaardid {
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+	flex-wrap: wrap;
+}
+
+.tagasiside-kaart {
+	background-color: white;
+	border-radius: 12px;
+	padding: 24px;
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+	max-width: 300px;
+	text-align: left;
+	border: 1px solid #DDD;
+}
+
+
+.tagasiside-kaart span {
+	font-size: 14px;
+	color: #444;
+	font-style: italic;
+}
+
+
+/* EPOOD KÄSITÖÖTOOTED */
+#epood-kaasitoo {
+	background-color: #F9F9F9;
+	padding: 80px 100px;
+	text-align: center;
+}
+
+#epood-kaasitoo h3 {
+  	text-align: center;
+	margin-bottom: 104px;
+}
+
+.filtrid {
+	display: flex;
+	justify-content: center;
+	gap: 16px;
+	margin-bottom: 40px;
+}
+
+
+.tooted-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 40px;
+	justify-items: center;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.toode-kaart {
+	background-color: white;
+	border-radius: 12px;
+	box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.25);
+	padding: 20px;
+	max-width: 300px;
+	text-align: left;
+	border: 1px solid #EEE;
+}
+
+.toode-kaart img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 8px;
+}
+
+.toode-kaart h5 {
+  	margin: 4px 0 16px 0;
+}
+
+.epood-tooted-container h5 {
+  	margin: 4px 0 16px 0;
+}
+
+#parandus1 {
+  	padding-bottom: 24px;
+}
+
+.hparandus1 {
+  	margin-bottom: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+/* KONTAKT FORM SEKTSIOON*/
+#kontakt-sisu {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 80px;
+}
+
+.kontakt-kirjeldus {
+	flex: 1;
+	max-width: 50%;
+}
+
+.kontakt-kirjeldus ul {
+	padding-left: 20px;
+	margin: 16px 0;
+}
+
+.kontakt-vorm {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	max-width: 500px;
+}
+
+.kontakt-vorm input,.kontakt-vorm textarea {
+	padding: 12px;
+	border: 1px solid #CCC;
+	border-radius: 8px;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	width: 100%;
+	box-sizing: border-box;
+	background-color: #E5E5E5;
+}
+
+
+/* GOOGLE MAPS KAART */
+
+#kontakt-kaart {
+	padding: 100px 0;
+}
+
+.kaart-sisu {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.map-wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.map-wrapper iframe {
+	width: 100%;
+	height: 530px;
+	border-radius: 12px;
+	border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ANNETUSED: ANNETUSE SIHTSEKTSIOON */
+#annetused-siht {
+	padding: 100px 100px;
+}
+
+#annetused-siht h2 {
+	text-align: center;
+	font-size: 38.1px;
+	margin-bottom: 120px;
+}
+
+.annetuse-plokk {
+	display: flex;
+	align-items: center;
+	gap: 60px;
+	max-width: 1000px;
+	margin: 0 auto;
+	margin-bottom: 100px;
+}
+
+.annetuse-plokk img {
+	width: 412px;
+	height: 412px;
+	border-radius: 12px;
+	object-fit: cover;
+}
+
+.annetuse-tekst {
+	flex: 1;
+}
+
+.annetuse-tekst h4 {
+	margin-bottom: 10px;
+}
+
+/* HARIDUS */
+#annetused-haridus {
+	padding: 80px 100px;
+	background-color: #EEEEEE;
+}
+
+
+/* KASITOO */
+#annetused-kogukond {
+	padding: 80px 100px;
+}
+
+
+/* KOGUMISFOND */
+#annetused-kogumisfond {
+	padding: 80px 100px;
+	background-color: #EEEEEE;
+}
+
+#info-riba {
+	margin-top: 160px;
+	background-color: #FFFFFF;
+	border-top: 1px solid #DDD;
+	padding: 40px 100px;
+}
+
+.info-riba-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.info-riba-container h5 {
+	margin: 32px 0 32px 0;
+	font-weight: 600;
+  	font-style: normal;
+  	font-family: 'Lato';
+	flex: 1;
+	text-align: center;
+}
+
+.annetused-nupud button {
+  	width: 160px;
+}
+
+.annetus-nupud button {
+  	width: 120px;
+}
+
+.hero-annetused .hero-content p {
+  	margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+/* DETAILLEHT */
+.toode-tagasi {
+	margin-bottom: 24px;
+	font-size: 16px;
+}
+
+.toode-wrapper {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+#toode-detail {
+	padding: 40px 100px;
+}
+
+.toode-grid {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px;
+	justify-content: space-between;
+	margin-bottom: 24px;
+}
+
+.toode-peapilt img {
+	width: 500px;
+	height: 450px;
+	max-width: 100%;
+	border-radius: 12px;
+}
+
+.toode-info {
+	flex: 1;
+	min-width: 300px;
+}
+
+.toode-info h4 {
+	margin-bottom: 16px;
+}
+
+.vari-valik {
+	display: flex;
+	gap: 12px;
+	margin-bottom: 20px;
+}
+
+.vari {
+	width: 122px;
+	height: 42px;
+	border-radius: 12px;
+	border: 2px solid #CCC;
+}
+
+.vari.must {
+	background-color: #333;
+}
+
+.vari.must:hover {
+  	border-color: #5B7083;
+}
+
+.vari.beez {
+	background-color: #C9C0B7;
+}
+
+.vari.beez:hover {
+  	border-color: #4A5F70;
+}
+
+.suurused {
+	display: flex;
+	gap: 12px;
+	margin-bottom: 20px;
+}
+
+.suurused button {
+	padding: 10px 18px;
+	width: 100px;
+	border-radius: 8px;
+	border: 1px solid #2E353D;
+	background-color: #F9F9F9;
+	cursor: pointer;
+	height: 42px;
+	color: #2E353D;
+	font-weight: 500;
+}
+
+.suurused button:hover {
+	background-color: #4A5F70;
+	color: white;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+	
+}
+
+.toode-kirjeldus {
+	margin-bottom: 20px;
+	font-size: 15px;
+	color: #333;
+}
+
+.lisa-korvi {
+	margin-top: 10px;
+}
+
+
+/* THUMBID */
+.toode-thumbs {
+	display: flex;
+	gap: 32px;
+	margin: 24px 0;
+}
+
+.toode-thumbs img {
+	width: 140px;
+	height: 140px;
+	border-radius: 8px;
+	object-fit: cover;
+	cursor: pointer;
+	border: 2px solid transparent;
+}
+
+.toode-thumbs img:hover {
+	border-color: #5B7083;
+}
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    height: auto;
+  }
+
+  .navbar-kesk, .navbar-parem {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .hero, .ajalugu, .cta-sektsioon {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .ajalugu-text, .cta-text {
+    max-width: 100%;
+  }
+
+  .ajalugu-pilt, .cta-pilt {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-top: 24px;
+  }
+
+  .kaardid {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .kaart {
+    max-width: 100%;
+  }
+
+  .ajakava table {
+    width: 100%;
+  }
+
+  .tooted-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .epood-tooted-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .toode {
+    max-width: 100%;
+  }
+
+  .toode-kaart {
+    max-width: 100%;
+  }
+
+  #kontakt-sisu {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 40px;
+  }
+
+  .kontakt-kirjeldus, .kontakt-vorm {
+    max-width: 100%;
+  }
+
+  .annetuse-plokk {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .annetuse-plokk img {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .footer img {
+    width: 100px;
+  }
+}
